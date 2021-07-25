@@ -7,15 +7,104 @@
     <title>Ivan Corlli</title>
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="bg-1">
     <header>
-        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="/index.html">Navbar</a>
+              <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+              class=" btn-out focus-i d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block">
+                <span  >
+                    <svg width="45" height="45" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="menu">
+                        <g id="rects">
+                        <g id="rect-3">
+                        <rect id="Rectangle 7" x="14" y="17" width="101" height="15" rx="7.5" fill="#EA22FC"/>
+                        </g>
+                        <g id="rect-2">
+                        <rect id="Rectangle 8" x="32" y="47" width="83" height="15" rx="7.5" fill="#EA22FC"/>
+                        </g>
+                        <g id="rect-1">
+                        <rect id="Rectangle 9" x="54" y="79" width="61" height="15" rx="7.5" fill="#EA22FC"/>
+                        </g>
+                        </g>
+                        </g>
+                        </svg>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="mx-1 my-3">
+                    <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#about">01. <span class="text-c1 hover-c2">About</span></a>
+                  </li>
+                  <li class="mx-1 my-3">
+                    <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#experience">02. <span class="text-c1 hover-c2">Experience</span></a>
+                  </li>
+                  <li class="mx-1 my-3">
+                    <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#contact">02. <span class="text-c1 hover-c2">Contact</span></a>
+                  </li>
+                  <li class="mx-2 my-3">
+                    <a class="button text-f1 text-c2 px-4 py-2  hover-c2--light" href="https://github.com/ivancorlli/portfolio" target="blank" tabindex="-1" aria-disabled="true"> <i class="fab fa-github"></i> Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-
+        <!-- Linux Windows -->
+        <section id="about">
+            <div class="container my-5 text-c1 text-f1 fw-bold"> 
+            <div class="container windows-bar align-items-center">
+                <div class="col-5">
+                    <a class=" circle circle-c-s4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to close"  >
+                  </a>
+                <a class="circle circle-c-s3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to open/close"  >
+                  </a>
+                <a class=" circle circle-c-s2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to open"  >
+                  </a>
+                </div>
+                <div class="col-7">
+                    <span class=" fs-3 mx-3">About_Me</span> 
+                </div>
+                </div> 
+            <div class="collapse" id="collapseExample">
+                <div class="windows-body">
+                    <!-- My name -->
+                    <p>
+                      <span class="text-c-s2"> root@icorlli-ubuntu:</span><span class="text-c-s3">~#</span> Hello! My name is <span class="text-c-s3">Ivan Corlli</span>. 
+                    </p>
+                    <!-- Who i am -->
+                    <p>
+                        <span class="text-c-s2"> ivan@corlli-ubuntu:</span><span class="text-c-s3">~$</span> I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!.  
+                    </p>
+                    <!-- skills -->
+                    <p>
+                        <span class="text-c-s2"> ivan@corlli-ubuntu:</span><span class="text-c-s3">~$ sudo apt-get skills</span>
+                    </p>
+                </div>
+              </div>   
+        </div> 
+        </section>
+        <!-- Notebook  -->
+        <section id="experience">
+            <div class="container my-5">
+                <!-- screen -->
+                <div class="container w-75 notebook-screen ">
+                    
+                    
+                </div >
+                <!-- bottom -->
+                <div class="container notebook-bottom d-none d-sm-block .d-sm-none d-md-block ">
+                </div>
+                <div class="container w-75 phone-bottom ">
+                </div>
+            </div>
+        </section>
     </main>
 
 

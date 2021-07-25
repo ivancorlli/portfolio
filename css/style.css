@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --c1:#CCD6F6;
+    --c2:#EA22FC;
+    --c3:#8892B0;
+    --c-s2:#3CB831;
+    --c-s3:#D8DB55;
+    --c-s4:#B83149;
+    --bg-1:#0A192F;
+    --bg-2:#ea22fc33;
+    --bg-3:#3D2346;
+    --bg-4:#3B3C3D;
+    --f1:'Roboto Mono', monospace;
+    --f2:'Inter', sans-serif;
+}
+/* Background */
+.bg-1{background-color: var(--bg-1);}
+/* Fuentes */
+.text-f1{
+    font-family: var(--f1);
+    text-decoration: none;
+}
+.text-f2{
+    font-family: var(--f2);
+    text-decoration: none;
+}
+/* Textos */
+.text-c1{color: var(--c1);}
+.text-c1:hover{color: var(--c1);}
+.text-c2{color: var(--c2);}
+.text-c2:hover{color: var(--c2);}
+.text-c-s2{color: var(--c-s2);}
+.text-c-s3{color: var(--c-s3);}
+
+/* Botones */
+.button{
+    border: 2px solid var(--c2);
+    border-radius: 0.875rem;
+    background-color: none;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: var(--bg-2);
+}
+.btn-out{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+/* Hovers*/
+.hover-c2:hover{color: var(--c2);}
+/* Focus*/
+.focus-c2:focus{
+    outline: 2px dotted var(--c2);
+    color: var(--c2); 
+}
+/*---- Disenios ----*/
+/* Linux Windows */
+.windows-bar{
+    display: flex;
+    background-color: var(--bg-4);
+    border-top-left-radius: 00.875rem;
+    border-top-right-radius: 00.875rem;
+    padding: 0.8rem;
+}
+.circle{
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5rem;
+    margin: 5px;
+    padding: 0.5rem 1rem;
+}
+.circle-c-s2{
+    background-color: var(--c-s2);
+}
+.circle-c-s3{
+    background-color: var(--c-s3);
+}
+.circle-c-s4{
+    background-color: var(--c-s4);
+}
+.windows-body{
+  background-color: var(--bg-3);  
+  border-bottom-right-radius: 00.875rem;
+  border-bottom-left-radius: 00.875rem;
+  padding: 1.5rem;
+  color: var(--c1);
+  font-family: var(--f1);
+  font-weight: bold;
+}
+/* Notebook */
+.notebook-screen{
+    height: 25rem;
+    border-top: 1px solid var(--c1);
+    border-right: 1px solid var(--c1);
+    border-left: 1px solid var(--c1);
+    border-top-left-radius:0.875rem;
+    border-top-right-radius:0.875rem;
+}
+
+.notebook-bottom{
+    height: 3rem;
+    border: 1px solid var(--c1);
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem;  
+}
