@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
@@ -31,12 +31,12 @@
 .text-c1:hover{color: var(--c1);}
 .text-c2{color: var(--c2);}
 .text-c2:hover{color: var(--c2);}
+.text-c3{color: var(--c3);}
 .text-c-s2{color: var(--c-s2);}
 .text-c-s3{color: var(--c-s3);}
-
 /* Botones */
 .button{
-    border: 2px solid var(--c2);
+    border: 1px solid var(--c2);
     border-radius: 0.875rem;
     background-color: none;
     text-decoration: none;
@@ -57,7 +57,7 @@
     outline: 2px dotted var(--c2);
     color: var(--c2); 
 }
-/*---- Disenios ----*/
+/*//////// Disenios ////////*/
 /* Linux Windows */
 .windows-bar{
     display: flex;
@@ -101,9 +101,101 @@
     border-top-right-radius:0.875rem;
 }
 
+.bor{
+    padding: .3rem;
+    margin: 1rem 0;
+    border-top-left-radius:1rem  ;
+    border-top-right-radius:1rem ;
+    width: 100%;
+}
 .notebook-bottom{
     height: 3rem;
     border: 1px solid var(--c1);
     border-bottom-left-radius:2rem;
     border-bottom-right-radius:2rem;  
+}
+.phone-bottom{
+    height: 2.5rem;
+    border: 1px solid var(--c1);
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem; 
+}
+
+
+/* ///////// Animaciones //////// */
+#I:hover{
+  position: relative;
+  animation-name: up;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
+}
+#v:hover{
+  animation-name: up;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
+}
+#a:hover{
+  animation-name: up;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
+}
+#n:hover{
+  animation-name: up;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
+}
+#C:hover{
+  animation-name: up;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
+}
+#o:hover{
+    animation-name: up;
+    animation-duration:.5s;
+    animation-timing-function: ease-i
+}
+#r:hover{
+    animation-name: up;
+    animation-duration:.5s;
+    animation-timing-function: ease-in-out;
+}
+#ll:hover{
+    animation-name: up;
+    animation-duration:.5s;
+    animation-timing-function: ease-in-out;
+}
+#i:hover{
+    animation-name: up;
+    animation-duration:.5s;
+    animation-timing-function: ease-in-out;
+}
+#dot:hover{
+    animation-name: up;
+    animation-duration:.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes up {
+    0%{
+    }
+    25%{
+        transform: translatey(-30px);
+    }
+    50%{
+        transform: translatey(-60px);
+    }
+    75%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+
+
+/* Media Querys */
+@media screen and (min-width: 992px){
+    .phone-bottom{
+        display: none;
+    }
 }

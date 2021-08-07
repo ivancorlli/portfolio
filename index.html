@@ -16,26 +16,47 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ">
               <a class="navbar-brand" href="/index.html">Navbar</a>
-              <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-              class=" btn-out focus-i d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block">
-                <span  >
-                    <svg width="45" height="45" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="menu">
-                        <g id="rects">
-                        <g id="rect-3">
-                        <rect id="Rectangle 7" x="14" y="17" width="101" height="15" rx="7.5" fill="#EA22FC"/>
-                        </g>
-                        <g id="rect-2">
-                        <rect id="Rectangle 8" x="32" y="47" width="83" height="15" rx="7.5" fill="#EA22FC"/>
-                        </g>
-                        <g id="rect-1">
-                        <rect id="Rectangle 9" x="54" y="79" width="61" height="15" rx="7.5" fill="#EA22FC"/>
-                        </g>
-                        </g>
-                        </g>
-                        </svg>
-                </span>
+              <button class="btn d-block  d-sm-block  d-md-block d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <svg width="45" height="45" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="menu">
+                  <g id="rects">
+                  <g id="rect-3">
+                  <rect id="Rectangle 7" x="14" y="17" width="101" height="15" rx="7.5" fill="#EA22FC"/>
+                  </g>
+                  <g id="rect-2">
+                  <rect id="Rectangle 8" x="32" y="47" width="83" height="15" rx="7.5" fill="#EA22FC"/>
+                  </g>
+                  <g id="rect-1">
+                  <rect id="Rectangle 9" x="54" y="79" width="61" height="15" rx="7.5" fill="#EA22FC"/>
+                  </g>
+                  </g>
+                  </g>
+                  </svg>
               </button>
+              <!-- Movil tablet -->
+              <div class="  offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header bg-1">
+                  <a class="navbar-brand" href="/index.html">Navbar</a>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-1">
+                  <ul class="navbar-nav text-center my-5 ">
+                    <li class=" my-4">
+                      <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#about">01. <span class="text-c1 hover-c2">About</span></a>
+                    </li>
+                    <li class=" my-4">
+                      <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#experience">02. <span class="text-c1 hover-c2">Experience</span></a>
+                    </li>
+                    <li class=" my-4">
+                      <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#contact">03. <span class="text-c1 hover-c2">Contact</span></a>
+                    </li>
+                    <li class=" my-4">
+                      <a class="button text-f1 text-c2 px-4 py-2  hover-c2--light" href="https://github.com/ivancorlli/portfolio" target="blank" tabindex" aria-disabled="true"> <i class="fab fa-github"></i> Resume</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Escritorio -->
               <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ">
                   <li class="mx-1 my-3">
@@ -45,7 +66,7 @@
                     <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#experience">02. <span class="text-c1 hover-c2">Experience</span></a>
                   </li>
                   <li class="mx-1 my-3">
-                    <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#contact">02. <span class="text-c1 hover-c2">Contact</span></a>
+                    <a class="text-f1 text-c2 focus-c2 py-2 px-4 " href="#contact">03. <span class="text-c1 hover-c2">Contact</span></a>
                   </li>
                   <li class="mx-2 my-3">
                     <a class="button text-f1 text-c2 px-4 py-2  hover-c2--light" href="https://github.com/ivancorlli/portfolio" target="blank" tabindex="-1" aria-disabled="true"> <i class="fab fa-github"></i> Resume</a>
@@ -53,26 +74,79 @@
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
+      <!-- Cabecera -->
+      <section class="my-4">
+        <div class="container ">
+          <div class="row">
+            <div class="col-12">
+              <span class=" fs-6 fs-ms-4 ms-2 ms-sm-3 ms-lg-4 text-f1 text-c2 ">Hi, my name is</span>
+            </div>
+            <div class="col-12 d-none  d-sm-block">
+              <svg   viewBox="0 0 1150 252" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Name">
+                <g id="nameSvg">
+                <g id="I" class="I">
+                <text id="I_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="900" letter-spacing="0em"><tspan x="26" y="211.727">I</tspan></text>
+                </g>
+                <g id="C">
+                <text id="C_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="900" letter-spacing="0em"><tspan x="469" y="212.727">C</tspan></text>
+                </g>
+                <g id="v">
+                <text id="v_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="79" y="211.727">v</tspan></text>
+                </g>
+                <g id="a">
+                <text id="a_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="186" y="208.727">a</tspan></text>
+                </g>
+                <g id="n">
+                <text id="n_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="290" y="211.727">n</tspan></text>
+                </g>
+                <g id="o">
+                <text id="o_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="612" y="211.727">o</tspan></text>
+                </g>
+                <g id="r">
+                <text id="r_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="732" y="212.727">r</tspan></text>
+                </g>
+                <g id="ll">
+                <text id="ll_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="814" y="212.727">ll</tspan></text>
+                </g>
+                <g id="i">
+                <text id="i_2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="923" y="211.727">i</tspan></text>
+                </g>
+                <g id="dot">
+                <text id="._2" fill="#CCD6F6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="200" font-weight="800" letter-spacing="0em"><tspan x="966" y="212.727">.</tspan></text>
+                </g>
+                </g>
+                </g>
+              </svg>
+            </div>
+            <div class="col-12 my-2 ms-5">
+              <span class="text-f1 text-c3 fw-bold display-6">I like to play with things on the web.</span>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
         <!-- Linux Windows -->
         <section id="about">
             <div class="container my-5 text-c1 text-f1 fw-bold"> 
             <div class="container windows-bar align-items-center">
                 <div class="col-5">
-                    <a class=" circle circle-c-s4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to close"  >
+                    <a class=" circle circle-c-s4" data-bs-toggle="collapse" href="#collapseLinux" role="button" aria-expanded="false" aria-controls="collapseLinux" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to close"  >
                   </a>
-                <a class="circle circle-c-s3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to open/close"  >
+                <a class="circle circle-c-s3" data-bs-toggle="collapse" href="#collapseLinux" role="button" aria-expanded="false" aria-controls="collapseLinux" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to open/close"  >
                   </a>
-                <a class=" circle circle-c-s2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to open"  >
+                <a class=" circle circle-c-s2" data-bs-toggle="collapse" href="#collapseLinux" role="button" aria-expanded="false" aria-controls="collapseLinux" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to open"  >
                   </a>
                 </div>
                 <div class="col-7">
                     <span class=" fs-3 mx-3">About_Me</span> 
                 </div>
                 </div> 
-            <div class="collapse" id="collapseExample">
+            <div class="collapse" id="collapseLinux">
                 <div class="windows-body">
                     <!-- My name -->
                     <p>
@@ -90,20 +164,58 @@
               </div>   
         </div> 
         </section>
+
         <!-- Notebook  -->
-        <section id="experience">
+        <section id="experience" class="my-5">
             <div class="container my-5">
                 <!-- screen -->
                 <div class="container w-75 notebook-screen ">
-                    
+                    <!-- Carousel -->
+                    <div id="carouselWorkControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner ">
+                        <div class="carousel-item active notebook-content">
+                          <img src="/assets/1.jpg" class="bor  " alt="..." >
+                        </div>
+                        <div class="carousel-item notebook-content">
+                          <img src="/assets/1.jpg" class="bor d-none d-sm-none d-md-none d-lg-block" alt="...">
+                        </div>
+                        <div class="carousel-item notebook-content">
+                          <img src="/assets/1.jpg" class="bor  " alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselWorkControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselWorkControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </button>
+                    </div> 
                     
                 </div >
                 <!-- bottom -->
-                <div class="container notebook-bottom d-none d-sm-block .d-sm-none d-md-block ">
+                <div class="container notebook-bottom d-none d-sm-none d-md-none d-lg-block  ">
                 </div>
-                <div class="container w-75 phone-bottom ">
+                <div class="container w-75 phone-bottom tablet-bottom ">
                 </div>
             </div>
+        </section>
+        <!-- contact -->
+        <section>
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12 my-5">
+                <span class="text-f1 text-c1 fw-lighter display-6 d-none d-sm-block d-md-none">
+                  Let`s make something great together
+                </span>
+                <span class="text-f1 text-c1 fw-lighter display-2 d-sm-none d-md-block ">
+                  Let`s make something great together
+                </span>
+              </div>
+              <div class="col-12 my-5">
+                <a class="button text-c2 text-f1 px-5 py-3 ">Start a Project</a>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
 
