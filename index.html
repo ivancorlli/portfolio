@@ -215,8 +215,13 @@
                       <p class="linux-name">
                         <span class="text-c-s2"> root@icorlli-ubuntu:</span><span class="text-c-s3">~#</span> My name is <span class="text-c-s3">Ivan Corlli</span>. 
                       </p>
+                      <!-- Image-Pc -->
                       <p class="ms-3">
-                        <img src="/assets/profile.jpg" alt="image-profile" class="img-fluid linux-image ms-5 w-25 h-25 ">
+                        <img src="/assets/profile.jpg" alt="image-profile" class="img-fluid linux-image ms-5 w-25 h-25 d-none d-sm-none d-md-block">
+                      </p>
+                      <!-- Image-movil -->
+                      <p class="ms-3">
+                        <img src="/assets/profile.jpg" alt="image-profile" class="img-fluid linux-image ms-5 w-50 h-25 d-md-none d-lg-none d-xl-none d-xxl-none">
                       </p>
                       <!-- Who i am -->
                       <p class="linux-why">
@@ -232,35 +237,42 @@
                             <!-- HTML -->
                             <div class="col-12">
                               <div class="info my-2">
-                                <span class="text-c1">HTML</span><span class="fs-5 mx-1"><i class="fab fa-html5"></i></span>
+                              <span class="fs-5 mx-1"><i class="fab fa-html5"></i></span><span class="text-c1">HTML</span>
                               </div>
                               <div class="progress-line html"><span></span></div>
                             </div>
                             <!-- CSS -->
                             <div class="col-12">
                               <div class="info my-2">
-                                <span class="text-c1">CSS</span><span class="fs-5 mx-1"><i class="fab fa-css3-alt"></i></span>
+                              <span class="fs-5 mx-1"><i class="fab fa-css3-alt"></i></span><span class="text-c1">CSS</span>
                               </div>
                               <div class="progress-line CSS"><span></span></div>
                             </div>
                             <!-- BOOTSTRAP -->
                             <div class="col-12">
                               <div class="info my-2">
-                                <span class="text-c1">Bootstrap</span><span class="fs-5 mx-1"><i class="fab fa-bootstrap"></i></span>
+                              <span class="fs-5 mx-1"><i class="fab fa-bootstrap"></i></span><span class="text-c1">Bootstrap</span>
                               </div>
                               <div class="progress-line bootstrap"><span></span></div>
+                            </div>
+                            <!-- Git -->
+                            <div class="col-12">
+                              <div class="info my-2">
+                              <span class="fs-5 mx-1"><i class="fab fa-github"></i></span><span class="text-c1">Github</span>
+                              </div>
+                              <div class="progress-line github"><span></span></div>
                             </div>
                             <!-- ES6 -->
                             <div class="col-12">
                               <div class="info my-2">
-                                <span class="text-c1">ES6</span><span class="fs-5 mx-1"><i class="fab fa-js"></i></span>
+                                <span class="fs-5 mx-1"><i class="fab fa-js"></i></span><span class="text-c1">ES6</span>
                               </div>
                               <div class="progress-line es6"><span></span></div>
                             </div>
                             <!-- React -->
                             <div class="col-12">
                               <div class="info my-2">
-                                <span class="text-c1">React</span><span class="fs-5 mx-1"><i class="fab fa-react"></i></span>
+                                <span class="fs-5 mx-1"><i class="fab fa-react"></i></span><span class="text-c1">React</span>
                               </div>
                               <div class="progress-line react"><span></span></div>
                             </div>
@@ -285,26 +297,26 @@
                       <div class="carousel-inner ">
                         <div class="carousel-item active notebook-content">
                           <!-- Pc -->
-                          <img src="/assets/viazzo.png" class="bor" alt="viazzo-web" > 
-                          <div class="carousel-caption d-none d-md-block">
-                            <h4 class="my-4 fw-bold display-6">Viazzo</h4>
+                          <img src="/assets/viazzo.png" alt="viazzo-web" class="bor d-none d-sm-none d-md-none d-lg-block" > 
+                          <!-- Movil -->
+                          <img src="/assets/ViazzoM.png" alt="viazzo-web" class="bor d-sm-none d-md-none d-lg-none d-xl-none" >
+                          <div class="carousel-caption">
+                            <h4 class="my-4 fw-bold display-6 d-none d-md-block">Viazzo</h4>
                               <div>
-                                <a href="https://viazzo.netlify.app/" target="blank" class=" px-4 mx-2 py-2 text-f2 fw-bold button-2"><span><i class="fas fa-external-link-alt"></i></span> Site</a>
-                                <a href="https://github.com/ivancorlli/Viazzo" target="blank" class=" px-4 mx-2 py-2 text-f2 fw-bold button-2"><span><i class="fab fa-github"></i></i></span> Repo</a>
+                                <a href="https://viazzo.netlify.app/" target="blank" class=" px-4 mx-2 py-md-2 text-f2 fw-bold button-2"><span><i class="fas fa-external-link-alt"></i></span> Site</a>
+                                <a href="https://github.com/ivancorlli/Viazzo" target="blank" class=" px-4 mx-2 py-md-2 text-f2 fw-bold button-2"><span><i class="fab fa-github"></i></i></span> Repo</a>
                               </div>
                           </div>
                         </div>
                         <div class="carousel-item notebook-content">
-                          <img src="/assets/ecmpras.png" class="bor d-none d-sm-none d-md-none d-lg-block" alt="ecompras-web">
-                          <div class="carousel-caption d-none d-md-block">
+                          <img src="/assets/ecmpras.png" alt="ecompras-web" class="bor d-none d-sm-none d-md-none d-lg-block">
                             <div class="carousel-caption d-none d-md-block">
                               <h4 class="my-4 fw-bold display-6">Ecompras</h4>
                                 <div>
-                                  <a href="https://ecompras.netlify.app/index.html" class=" px-4 mx-2 py-2 text-f2 fw-bold button-2" target="blank"><span><i class="fas fa-external-link-alt"></i></span> Site</a>
-                                  <a href="https://github.com/ivancorlli/ecommerce" class=" px-4 mx-2 py-2 text-f2 fw-bold button-2" target="blank"><span><i class="fab fa-github"></i></i></span> Repo</a>
+                                  <a href="https://ecompras.netlify.app/index.html" class=" px-4 mx-2 py-md-2 text-f2 fw-bold button-2" target="blank"><span><i class="fas fa-external-link-alt"></i></span> Site</a>
+                                  <a href="https://github.com/ivancorlli/ecommerce" class=" px-4 mx-2 py-md-2 text-f2 fw-bold button-2" target="blank"><span><i class="fab fa-github"></i></i></span> Repo</a>
                                 </div>
                             </div>
-                          </div>
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselWorkControls" data-bs-slide="prev">
