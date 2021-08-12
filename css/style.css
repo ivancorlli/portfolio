@@ -9,7 +9,7 @@ html{
     --c2:#EA22FC;
     --c3:#8892B0;
     --c-s2:#3CB831;
-    --c-s3:#D8DB55;
+    --c-s3:#e1e44c;
     --c-s4:#B83149;
     --bg-1:#0A192F;
     --bg-2:#ea22fc33;
@@ -54,6 +54,17 @@ html{
     outline: none;
     text-decoration: none;
 }
+.button-2{
+    /* border: 1px solid var(--bg-3); */
+    border-radius: 0.875rem;
+    background-color: var(--bg-3);
+    text-decoration: none;
+    color: var(--c1);
+    cursor:pointer;
+} 
+.button-2:hover{
+    color: var(--c2);
+} 
 /* Hovers*/
 .hover-c2:hover{color: var(--c2);}
 /* Focus*/
@@ -95,6 +106,12 @@ html{
   font-family: var(--f1);
   font-weight: bold;
 }
+.linux-image{
+    clip-path: polygon(15% 15%, 85% 15%, 100% 30%, 100% 70%, 85% 85%, 15% 85%, 0% 70%, 0% 30%);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: showText .5s 2.5s linear forwards;
+}
 /* Skills */
 .progress-line{
     position: relative;
@@ -104,22 +121,22 @@ html{
     border-radius: 10px;
     transform: scaleX(0);
     transform-origin:left ;
-    animation:skillsMove .75s .75s cubic-bezier(1,0,0.5,1) forwards ;
+    animation:skillsMove .75s 3.5s cubic-bezier(1,0,0.5,1) forwards ;
     
 }
 .progress-line span{
     height: 100%;
     width: 80%;
-    background-color: var(--c2);
+    background-color: var(--c-s3);
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
     transform-origin:left ;
-    animation:skillsMove 1s 1s cubic-bezier(1,0,0.5,1) forwards ;
+    animation:skillsMove 1s 3.5s cubic-bezier(1,0,0.5,1) forwards ;
 }
 .info span{
     opacity: 0;
-    animation: showText .5s 1.5s linear forwards;
+    animation: showText .5s 3.5s linear forwards;
 }
 .progress-line span::before{
     position:absolute;
@@ -137,21 +154,45 @@ html{
     position:absolute;
     right: 0;
     top: -28px;
-    color: var(--c3);
+    color: var(--c1);
     font-weight: 800;
     background-color: #000;
     font-size: 14px;
     padding: 1px 8px;
     border-radius:3px ;
     opacity: 0;
-    animation: showText .5s 1.5s linear forwards;
+    animation: showText .5s 3.5s linear forwards;
 }
 /* medidas de skills */
 .html span::after{
-    content: '95%';
+    content: '97%';
 }
 .html span{
+    width: 97%;
+}
+.CSS span::after{
+    content: '95%';
+}
+.CSS span{
     width: 95%;
+}
+.bootstrap span::after{
+    content: '93%';
+}
+.bootstrap span{
+    width: 93%;
+}
+.es6 span::after{
+    content: '65%';
+}
+.es6 span{
+    width: 65%;
+}
+.react span::after{
+    content: '30%';
+}
+.react span{
+    width: 30%;
 }
 /* Notebook */
 .notebook-screen{
@@ -168,6 +209,8 @@ html{
     border-top-left-radius:1rem  ;
     border-top-right-radius:1rem ;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.029);
+    opacity:55% ;
 }
 .notebook-bottom{
     height: 3rem;
@@ -181,8 +224,57 @@ html{
     border-bottom-left-radius:2rem;
     border-bottom-right-radius:2rem; 
 }
-
+/* Footer */
+.triangle{
+    clip-path: polygon(0 38%, 100% 0, 100% 100%, 0% 100%);
+    background-color: var(--bg-3);
+}
 /* ///////// Animaciones //////// */
+
+.header-text{ 
+    opacity: 0;
+    animation: showText .5s 1.5s linear forwards;
+}
+.header-name{
+    opacity: 0;
+    animation: showText 1s 2.5s linear forwards;
+}
+.header-sub{
+    opacity: 0;
+    animation: showText 1.5s 3.5s linear forwards;
+}
+.header-btn{
+    opacity: 0;
+    animation: showText 2s 4.5s linear forwards;
+    
+}
+.linux-welcome{
+    opacity: 0;
+    animation: showText .5s 1.5s linear forwards;
+}
+.linux-name{
+    opacity: 0;
+    animation: showText .5s 2s linear forwards;
+}
+.linux-why{
+    opacity: 0;
+    animation: showText .5s 3s linear forwards;
+}
+.linux-skills{
+    opacity: 0;
+    animation: showText .5s 3.5s linear forwards;
+}
+@keyframes skillsMove{
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
 #I:hover{
   position: relative;
   animation-name: up;
@@ -211,28 +303,28 @@ html{
 }
 #o:hover{
     animation-name: up;
-    animation-duration:.5s;
-    animation-timing-function: ease-i
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
 }
 #r:hover{
     animation-name: up;
-    animation-duration:.5s;
-    animation-timing-function: ease-in-out;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
 }
 #ll:hover{
     animation-name: up;
-    animation-duration:.5s;
-    animation-timing-function: ease-in-out;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
 }
 #i:hover{
     animation-name: up;
-    animation-duration:.5s;
-    animation-timing-function: ease-in-out;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
 }
 #dot:hover{
     animation-name: up;
-    animation-duration:.5s;
-    animation-timing-function: ease-in-out;
+  animation-duration:.5s;
+  animation-timing-function: ease-in-out;
 }
 @keyframes up {
     0%{
@@ -250,18 +342,8 @@ html{
         transform: translatey(0px);
     }
 }
-@keyframes skillsMove{
-    100%{
-        transform: scaleX(1);
-    }
-}
-@keyframes showText{
-    100%{
-        opacity: 1;
-    }
-}
-
 /* Media Querys */
+/* Md */
 @media screen and (min-width: 992px){
     .phone-bottom{
         display: none;
@@ -270,3 +352,5 @@ html{
         width: 55%;
     }
 }
+
+
