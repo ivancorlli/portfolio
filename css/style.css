@@ -3,6 +3,7 @@
 
 html{
     margin: 0;
+    scroll-behavior: smooth;
 }
 :root{
     --c1:#CCD6F6;
@@ -13,13 +14,14 @@ html{
     --c-s4:#B83149;
     --bg-1:#0A192F;
     --bg-2:#ea22fc33;
-    --bg-3:#3D2346;
+    --bg-3:#302035;
     --bg-4:#3B3C3D;
     --f1:'Roboto Mono', monospace;
     --f2:'Inter', sans-serif;
 }
 /* Background */
 .bg-1{background-color: var(--bg-1);}
+.bg-c3{background-color: var(--c3);}
 /* Fuentes */
 .text-f1{
     font-family: var(--f1);
@@ -56,7 +58,7 @@ html{
 }
 .button-2{
     /* border: 1px solid var(--bg-3); */
-    border-radius: 0.875rem;
+    border-radius: 0.4rem;
     background-color: var(--bg-3);
     text-decoration: none;
     color: var(--c1);
@@ -72,6 +74,14 @@ html{
     outline: 2px dotted var(--c2);
     color: var(--c2); 
 }
+/* Inputs */
+.comment-input{
+    border: none;
+    border-bottom: 2px solid var(--c3);
+    width: 75%;
+    outline: none;
+}
+
 /*//////// Disenios ////////*/
 /* Linux Windows */
 .windows-bar{
@@ -200,9 +210,26 @@ html{
 .react span{
     width: 40%;
 }
+/*----- Timeline ------ */
+.timeline{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    color: var(--c1);
+}
+.timeline-list{
+    list-style: none;
+}
+.list-item{
+    padding: 1.1rem;
+    background-color: var(--bg-4);
+    color: var(--c1);
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+}
 /* Notebook */
 .notebook-screen{
-    height: 27.5rem;
+    height: 30rem;
     border-top: 1px solid var(--c1);
     border-right: 1px solid var(--c1);
     border-left: 1px solid var(--c1);
@@ -274,10 +301,10 @@ html{
     opacity: 0;
     animation: showText .5s 5s linear forwards;  
 }
-#experience{
+#work{
     opacity: 0;
     animation: showText .5s 6s linear forwards;  
-}
+}  
 @keyframes skillsMove{
     100%{
         transform: scaleX(1);
@@ -289,57 +316,13 @@ html{
     }
 }
 
-#I:hover{
+#I:hover,#v:hover,#a:hover,#n:hover,#C:hover,#o:hover,#r:hover,#ll:hover,#i:hover,#dot:hover{
   position: relative;
   animation-name: up;
   animation-duration:.5s;
   animation-timing-function: ease-in-out;
 }
-#v:hover{
-  animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#a:hover{
-  animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#n:hover{
-  animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#C:hover{
-  animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#o:hover{
-    animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#r:hover{
-    animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#ll:hover{
-    animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#i:hover{
-    animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
-#dot:hover{
-    animation-name: up;
-  animation-duration:.5s;
-  animation-timing-function: ease-in-out;
-}
+
 @keyframes up {
     0%{
     }
@@ -358,6 +341,25 @@ html{
 }
 /* Media Querys */
 /* Md */
+@media screen and (min-width: 786px){
+    .notebook-screen{
+        height: 38rem;
+    }
+    .list-item{
+        width: 50%;
+        margin-bottom: 2.5rem;
+    
+    }
+    .list-item:nth-child(odd){
+    float: right;
+    clear: left;
+    }
+    .list-item:nth-child(even){
+        float: left;
+        clear: right;
+    }
+}
+/* lg */
 @media screen and (min-width: 992px){
     .phone-bottom{
         display: none;
@@ -365,6 +367,20 @@ html{
     .progress-line{
         width: 55%;
     }
+    .notebook-screen{
+        height: 21rem;
+    }
 }
-
+/* xl */
+@media screen and (min-width: 1200px){
+    .notebook-screen{
+        height: 25rem;
+    }
+}
+/* xxl */
+@media screen and (min-width: 1400px){
+    .notebook-screen{
+        height: 29rem;
+    }
+}
 
