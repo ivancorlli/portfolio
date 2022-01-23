@@ -206,10 +206,10 @@ html{
     width: 50%;
 }
 .es6 span::after{
-    content: '65%';
+    content: '80%';
 }
 .es6 span{
-    width: 65%;
+    width: 80%;
 }
 .react span::after{
     content: '65%';
@@ -218,7 +218,7 @@ html{
     width: 65%;
 }
 .mongoDb span::after{
-    content: '30%';
+    content: '40%';
 }
 .mongoDb span{
     width: 40%;
@@ -230,10 +230,10 @@ html{
     width: 55%;
 }
 .styledComp span::after{
-    content: '45%';
+    content: '55%';
 }
 .styledComp span{
-    width: 45%;
+    width: 55%;
 }
 /*----- Timeline ------ */
 .timeline{
